@@ -1,0 +1,44 @@
+<meta charset = "UTF-8">
+
+<h1>PROGRAMA = CALCULO IMC </h1>
+
+
+<script>
+	function saltarLinea(){
+
+		document.write ("<br>");
+		document.write ("<br>");
+		document.write ("<br>");
+	}
+
+	function imprimir(frase){
+ 
+		document.write(frase);
+		saltarLinea();
+	}
+
+	function calcularIMC (peso,altura){
+		return (peso /(altura * altura));
+	
+	}
+
+	nombre = prompt ("informe su nombre")
+	pesoinf = prompt(nombre + "informe su peso")
+	alturainf = prompt (nombre + "informe su altura")
+	imcCal = calcularIMC (pesoinf,alturainf);
+
+	imprimir (nombre + ", su indice de masa es: " + imcCal)
+
+	if (imcCal < 18.5){	
+	imprimir ("Su peso esta abajo de lo recomendado");
+	}
+	if (imcCal >= 18.5 && imcCal <= 24.9){
+	imprimir ("Su peso es normal");
+	}
+	if (imcCal > 25){
+	imprimir ("usted tiene sobrepeso");
+    }
+    if (imcCal >= 25 && imcCal <= 29){
+	imprimir ("Usted tiene obecidad");
+   	}
+</script>

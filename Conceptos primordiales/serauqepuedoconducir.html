@@ -1,0 +1,29 @@
+<meta charset = "UTF-8">
+
+<h1>PROGRAMA = CALCULO IMC </h1>
+
+
+<script>
+	function saltarLinea(){
+
+		document.write ("<br>");
+		document.write ("<br>");
+		document.write ("<br>");
+	}
+
+	function imprimir(frase){
+ 
+		document.write(frase);
+		saltarLinea();
+	}
+
+	var edad = parseInt (prompt ("¿Cuál es tu edad?"));
+    var tieneLicencia = prompt("¿tienes licencia? responde s o n");
+
+    if (edad => 18 && tieneLicencia == s ){
+    	imprimir ("si puede conducir")
+		}
+    else {
+    	imprimir ("No puede conducir")
+    }
+</script>
